@@ -175,4 +175,27 @@ class Connection {
     {
         return new \MongoCollection($this->getMongoDB(), $name);
     }
+
+    /**
+     * Dynamically select the database
+     *
+     * @param  string  $dbName
+     * @return \MongoDB
+     */
+    public function selectDB($dbName)
+    {
+        return $this->db = $this->connection->selectDB($dbName);
+    }
+
+    /**
+     * Dynamically create the database
+     *
+     * @param  string  $dbName
+     * @return void
+     */
+    public function createDB($dbName)
+    {
+        $this->db = $this->connection->selectDB($dbName);
+        $this->db->getCollectionNames();
+    }
 }

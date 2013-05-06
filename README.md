@@ -89,6 +89,18 @@ $mongo = $LMongo->getMongoClient();
 $databases = $mongo->listDBs();
 ```
 
+Select/switch the database:
+
+```php
+$LMongo->selectDB($dbName);
+```
+
+Create the database:
+
+```php
+$LMongo->createDB($dbName);
+```
+
 Query Builder
 =============
 
