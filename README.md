@@ -1,4 +1,4 @@
-LMongo [![Build Status](https://secure.travis-ci.org/navruzm/lmongo.png?branch=master)](https://travis-ci.org/navruzm/lmongo)
+LMongo [![Build Status](https://secure.travis-ci.org/shershams/lmongo.png?branch=master)](https://travis-ci.org/shershams/lmongo)
 ======
 
 LMongo is [MongoDB](http://www.mongodb.org/) package for [Laravel 4](http://laravel.com/). Most part of LMongo is based on [Illuminate/Database](https://github.com/illuminate/database) (Thanks to @taylorotwell)
@@ -21,12 +21,12 @@ LMongo is [MongoDB](http://www.mongodb.org/) package for [Laravel 4](http://lara
 Installation
 ============
 
-Add `navruzm/lmongo` as a requirement to composer.json:
+Add `shershams/lmongo` as a requirement to composer.json:
 
 ```json
 {
     "require": {
-        "navruzm/lmongo": "*"
+        "shershams/lmongo": "*"
     }
 }
 ```
@@ -48,9 +48,9 @@ Then find the `aliases` key and add following line to the array:
 Finally you need to publish a configuration file by running the following Artisan command.
 
 ```terminal
-$ php artisan config:publish navruzm/lmongo
+$ php artisan config:publish shershams/lmongo
 ```
-This will copy the default configuration file to app/config/packages/navruzm/lmongo/config.php
+This will copy the default configuration file to app/config/packages/shershams/lmongo/config.php
 
 
 Basic Usage
